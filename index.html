@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Vasile Pasat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="poza"></div>
+    <div class="info">
+      <h1>Vasile Pasat</h1>
+      <h2>Junior Network Engineer</h2>
+      <!-- CONTACT TEXT - vizibil doar pe PC -->
+      <div class="contact">
+        <p>📞 +373 672 37 272
+          <a href="https://wa.me/37367237272" target="_blank">WhatsApp</a> |
+          <a href="viber://chat?number=%2B37367237272">Viber</a>
+        </p>
+        <p>📧 <a href="https://mail.google.com/mail/?view=cm&to=vasilepasat472@gmail.com" target="_blank">vasilepasat472@gmail.com</a></p>
+        <p>📍 Chișinău, Moldova</p>
+        <p>🎂 28 Octombrie 2007</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUTOANE CONTACT - vizibile doar pe telefon -->
+  <div class="butoane">
+    <a href="tel:+37367237272" class="buton" title="Telefon">📞</a>
+    <a href="https://wa.me/37367237272" target="_blank" class="buton buton-img" title="WhatsApp">
+      <img src="whatsapp.svg" alt="WhatsApp">
+    </a>
+    <a href="viber://chat?number=%2B37367237272" class="buton buton-img" title="Viber">
+      <img src="viber.svg" alt="Viber">
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&to=vasilepasat472@gmail.com" target="_blank" class="buton" title="Gmail">✉️</a>
+    <button class="buton" onclick="togglePopup('popup-locatie')">📍</button>
+    <button class="buton" onclick="togglePopup('popup-nastere')">🎂</button>
+  </div>
+
+  <!-- POPUP LOCATIE -->
+  <div class="popup" id="popup-locatie">
+    <div class="popup-continut">
+      <span class="popup-inchide" onclick="togglePopup('popup-locatie')">✕</span>
+      <p>📍 Chișinău, Moldova</p>
+    </div>
+  </div>
+
+  <!-- POPUP NASTERE -->
+  <div class="popup" id="popup-nastere">
+    <div class="popup-continut">
+      <span class="popup-inchide" onclick="togglePopup('popup-nastere')">✕</span>
+      <p>🎂 28 Octombrie 2007</p>
+    </div>
+  </div>
+
+  <!-- PROFIL -->
+  <h3 class="titlu">Profil</h3>
+  <p class="profil">
+    Student IT cu interes în domeniul networking-ului, având cunoștințe fundamentale în configurarea rețelelor,
+    VLAN-uri și adresare IP. Experiență practică în proiectarea și simularea topologiilor de rețea utilizând
+    <strong>Cisco Packet Tracer</strong>, incluzând concepte de routing și switching la nivel de bază. De asemenea,
+    dețin cunoștințe de bază în utilizarea sistemului de operare <strong>Linux (Ubuntu)</strong> și lucrul cu
+    mașini virtuale prin <strong>Oracle VirtualBox</strong>. În căutarea unei oportunități de practică în
+    administrarea rețelelor, cu obiectivul dezvoltării unei cariere ca Junior Network Engineer și
+    consolidării competențelor tehnice.
+  </p>
+
+  <!-- COMPETENTE -->
+  <h3 class="titlu">Competențe</h3>
+  <div class="bloc">
+    <ul class="text">
+      <li>Configurare de rețele utilizând Cisco Packet Tracer</li>
+      <li>Concepte de routing și switching</li>
+      <li>Configurare VLAN</li>
+      <li>Adresare IP și subnetting</li>
+      <li>Protocoale DHCP, DNS, HTTP, FTP, ICMP</li>
+      <li>Modelele OSI și TCP/IP</li>
+      <li>Depanare și rezolvare de probleme de rețea</li>
+    </ul>
+  </div>
+
+  <!-- SOFTWARE -->
+  <h3 class="titlu">Software</h3>
+  <div class="bloc">
+    <p class="text">
+      Cisco Packet Tracer | Visual Studio Code | Microsoft Office | Linux (Ubuntu) | Adobe Acrobat | Oracle VM VirtualBox
+    </p>
+  </div>
+
+  <!-- LIMBI -->
+  <h3 class="titlu">Limbi străine</h3>
+  <div class="bloc">
+    <p class="text">
+      Română – Native | Rusă – Fluent | Engleză – Intermediate (B1+)
+    </p>
+  </div>
+
+  <!-- EDUCATIE -->
+  <div class="sectiune">
+    <h3 class="sectiune-titlu">Educație</h3>
+    <div class="bara"></div>
+    <div class="continut">
+      <a href="https://colegiu.utm.md" target="_blank">Colegiul Universității Tehnice a Moldovei</a>, Chișinău [01.09.2023 – 30.05.2027 (prevăzut)]<br>
+      Specialitate: Rețele de calculatoare
+    </div>
+  </div>
+
+  <!-- CERTIFICARI -->
+  <div class="sectiune" style="margin-top: 30px;">
+    <h3 class="sectiune-titlu">Certificări</h3>
+    <div class="bara"></div>
+    <div class="continut">
+      <a href="Emerging Technologies Workshop - Model Driven Programmability.pdf" target="_blank">Emerging Technologies Workshop - Model Driven Programmability</a> – Cisco Networking Academy (Completed)<br>
+      <a href="Networking Basics.pdf" target="_blank">Networking Basics</a> – Cisco Networking Academy (Completed)<br>
+      <a href="Network Technician Career Path.pdf" target="_blank">Network Technician Career Path</a> – Cisco Networking Academy (Completed)<br>
+      <a href="Introduction to Cybersecurity.pdf" target="_blank">Introduction to Cybersecurity</a> – Cisco Networking Academy (Completed)<br>
+      <a href="Linux 1.pdf" target="_blank">Linux 1</a> – Cisco Networking Academy (Completed)<br>
+      CCNA – Switching, Routing, Wireless Essentials – Cisco Networking Academy (In Progress)
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function togglePopup(id) {
+    var popup = document.getElementById(id);
+    popup.classList.toggle('activ');
+  }
+  window.onclick = function(e) {
+    if (e.target.classList.contains('popup')) {
+      e.target.classList.remove('activ');
+    }
+  }
+</script>
+
+</body>
+</html>
