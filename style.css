@@ -19,9 +19,13 @@ body {
 
 .poza {
     width: 230px;
-    height: 230px;
+    height: 240px;
     min-width: 230px;
-    background: #c0c0c0;
+    background-image: url("poza.jpg");
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 .info {
@@ -264,7 +268,7 @@ a:hover {
     .profil {
         font-size: 14px;
         text-indent: 20px;
-        text-align: justify;
+        text-align: left;
     }
 
     .text {
